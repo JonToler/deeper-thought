@@ -2,12 +2,15 @@
 <h3>It is a Question and Answer Message Board.</h3>
 
 Where all questions are eventually answered.
+
 <div class="jumbotron">
-  <ul>
-    {{#each model as |question|}}
-      {{question-tile question=question}}
+  <div>
+    <ul>
+      {{#each model as |question|}}
+        {{question-tile question=question}}
       {{/each}}
-  </ul>
+    </ul>
+  </div>
 </div>
 
 

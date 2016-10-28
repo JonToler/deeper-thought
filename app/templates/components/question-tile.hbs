@@ -1,3 +1,8 @@
 <li>
-  <img src={{question.image}}>{{question.question}} <br>asked by: {{question.author}}
+  {{question.question}} <br>asked by: {{question.author}}
+  {{#if isImageShowing }}
+  <p><img src={{question.image}} alt={{question.notes}}  {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'imageShow'}}>Show image </button>
+  {{/if}}
 </li>
