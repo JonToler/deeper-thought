@@ -3,4 +3,9 @@
 
 We hope you find exactly what you're looking for in a place to stay.
 
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.question}} by:{{question.author}}</li>
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
