@@ -3,19 +3,14 @@
 
 Where all questions are eventually answered.
 
-<div class="jumbotron">
-  <div>
-    <ul>
-      {{#each model as |question|}}
-        {{question-tile question=question destroyQuestion="destroyQuestion"}}
-      {{/each}}
-    </ul>
-  </div>
-</div>
+<ul>
+  {{#each model as |question|}}
+     {{question-tile question=question destroyQuestion="destroyQuestion"}}
+  {{/each}}
+</ul>
 
 {{new-question saveQuestion="saveQuestion"}}
 
 
-{{#link-to 'index'}}Home{{/link-to}}
 {{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+{{#link-to 'contact'}}Click here to make contact{{/link-to}}

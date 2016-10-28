@@ -8,14 +8,15 @@ export default Ember.Component.extend({
     },
 
     saveQuestion() {
-     var params = {
-       author: this.get('author'),
-       image: this.get('image'),
-       notes: this.get('notes'),
-       question: this.get('question'),
-     };
-     this.set('addNewQuestion', false);
-     this.sendAction('saveQuestion', params);
+      var params = {
+        author: this.get('author'),
+        notes: this.get('notes'),
+        post: this.get('post'),
+        image: this.get('image'),
+
+      };
+      this.set('addNewQuestion', false);
+      this.sendAction('saveQuestion', params);
     }
   }
 });

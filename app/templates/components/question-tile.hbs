@@ -1,12 +1,9 @@
 <li>
-  <p> The Question:<br>
-    {{question.question}} <br>asked by: {{question.author}}</p>
-  {{#if isImageShowing }}
-  <p><img src={{question.image}} alt={{question.notes}}  {{action 'imageHide'}}></p>
-  <hr>Notes:{{question.notes}}
-  <hr><button {{action 'delete' question}}>Delete this Question</button>
+  {{question.author}}'s <br> question: {{question.post}} <br> notes: <br> {{question.notes}}
+  {{#if isImageShowing}}
+  <p><img src={{question.image}} alt="loading..." {{action 'imageHide'}}></p>
   {{else}}
-    <button {{action 'imageShow'}}>Show image </button>
+    <button {{action 'imageShow'}}>Show image</button>
   {{/if}}
-
+  <button {{action 'delete' question}}>Delete Question</button>
 </li>

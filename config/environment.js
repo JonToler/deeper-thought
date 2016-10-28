@@ -12,6 +12,7 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+
     firebase: {
       apiKey: "AIzaSyAI42nwuEW2m0tQZaQHF8yHPu8RBmgECh4",
       authDomain: "deep-thought-c63b0.firebaseapp.com",
