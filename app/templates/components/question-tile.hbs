@@ -1,8 +1,12 @@
 <li>
-  {{question.question}} <br>asked by: {{question.author}}
+  <p> The Question:<br>
+    {{question.question}} <br>asked by: {{question.author}}</p>
   {{#if isImageShowing }}
   <p><img src={{question.image}} alt={{question.notes}}  {{action 'imageHide'}}></p>
+  <hr>Notes:{{question.notes}}
+  <hr><button {{action 'delete' question}}>Delete this Question</button>
   {{else}}
     <button {{action 'imageShow'}}>Show image </button>
   {{/if}}
+
 </li>

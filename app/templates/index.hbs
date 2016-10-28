@@ -7,7 +7,7 @@ Where all questions are eventually answered.
   <div>
     <ul>
       {{#each model as |question|}}
-        {{question-tile question=question}}
+        {{question-tile question=question destroyQuestion="destroyQuestion"}}
       {{/each}}
     </ul>
   </div>
