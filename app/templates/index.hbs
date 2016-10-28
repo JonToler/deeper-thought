@@ -1,13 +1,15 @@
 <h1> Deep Thought</h1>
 <h3>It is a Question and Answer Message Board.</h3>
 
-Where all questions are eventually ansered.
+Where all questions are eventually answered.
+<div class="jumbotron">
+  <ul>
+    {{#each model as |question|}}
+      <li><img src={{question.image}}>{{question.question}} <br>asked by: {{question.author}}</li>
+      {{/each}}
+  </ul>
+</div>
 
-<ul>
-  {{#each model as |question|}}
-    <li>{{question.question}} <br>asked by: {{question.author}}</li>
-    {{/each}}
-</ul>
 
 {{#link-to 'index'}}Home{{/link-to}}
 {{#link-to 'about'}}About{{/link-to}}
