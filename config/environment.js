@@ -12,6 +12,13 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+    firebase: {
+      apiKey: "AIzaSyAI42nwuEW2m0tQZaQHF8yHPu8RBmgECh4",
+      authDomain: "deep-thought-c63b0.firebaseapp.com",
+      databaseURL: "https://deep-thought-c63b0.firebaseio.com",
+      storageBucket: "deep-thought-c63b0.appspot.com",
+
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

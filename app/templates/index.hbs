@@ -1,11 +1,14 @@
 <h1> Deep Thought</h1>
 <h3>It is a Question and Answer Message Board.</h3>
 
-We hope you find exactly what you're looking for in a place to stay.
+Where all questions are eventually ansered.
 
 <ul>
   {{#each model as |question|}}
-    <li>{{question.question}} by:{{question.author}}</li>
+    <li>{{question.question}} <br>asked by: {{question.author}}</li>
+    {{/each}}
 </ul>
 
+{{#link-to 'index'}}Home{{/link-to}}
 {{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
