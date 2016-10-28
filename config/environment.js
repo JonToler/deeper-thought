@@ -16,8 +16,7 @@ module.exports = function(environment) {
       apiKey: "AIzaSyAI42nwuEW2m0tQZaQHF8yHPu8RBmgECh4",
       authDomain: "deep-thought-c63b0.firebaseapp.com",
       databaseURL: "https://deep-thought-c63b0.firebaseio.com",
-      storageBucket: "deep-thought-c63b0.appspot.com",
-
+      storageBucket: "deep-thought-c63b0.appspot.com"
     },
 
     APP: {
