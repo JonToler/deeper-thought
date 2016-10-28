@@ -5,7 +5,7 @@ Where all questions are eventually answered.
 <div class="jumbotron">
   <ul>
     {{#each model as |question|}}
-      <li><img src={{question.image}}>{{question.question}} <br>asked by: {{question.author}}</li>
+      {{question-tile question=question}}
       {{/each}}
   </ul>
 </div>
