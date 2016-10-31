@@ -1,15 +1,31 @@
-<h1> Deep Thought</h1>
+
 <h3>It is a Question and Answer Message Board.</h3>
 
 Where all questions are eventually answered.
 
-<ul>
-  {{#each model as |question|}}
-     {{question-tile question=question}}
-  {{/each}}
-</ul>
+<h2> The Questions </h2>
+<div class="jumbotron">
+  <ul>
+    {{#each model.questions as |question|}}
+       {{question-tile question=question}}
+    {{/each}}
+  </ul>
+
+</div>
 
 {{new-question saveQuestion="saveQuestion"}}
+
+<h2> All comments </h2>
+<div class="jumbotron">
+  <ul>
+    {{#each model.comment as |comment|}}
+      <li>{{comment.content}} - by {{comment.author}}</li>
+    {{/each}}
+  </ul>
+</div>
+
+
+<hr>
 
 
 {{#link-to 'about'}}About{{/link-to}}
