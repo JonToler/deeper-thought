@@ -18,7 +18,7 @@ Where all questions are eventually answered.
 <h2> All comments </h2>
 <div class="jumbotron">
   <ul>
-    {{#each model.comment as |comment|}}
+    {{#each model.comments as |comment|}}
       <li>{{comment.content}} - by {{comment.author}}</li>
     {{/each}}
   </ul>
