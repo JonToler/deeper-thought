@@ -15,6 +15,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
         
 
+
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);
