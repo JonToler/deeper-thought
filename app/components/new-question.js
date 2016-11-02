@@ -13,6 +13,7 @@ export default Ember.Component.extend({
         notes: this.get('notes'),
         post: this.get('post'),
         image: this.get('image'),
+        
 
       };
       this.set('addNewQuestion', false);
