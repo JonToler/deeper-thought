@@ -14,5 +14,10 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
+    saveRating(params) {
+    var newRating = this.store.createRecord('rating', params);
+    newRating.save();
+    this.transitionTo('index');
+    }
   }
 });
