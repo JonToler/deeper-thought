@@ -24,4 +24,15 @@ Where all questions are eventually answered.
   </ul>
 </div>
 
+<h4> All comment Ratings </h4>
+<div class="well">
+  <ol>
+    {{#each model.ratings as |rating|}}
+      <li>By:{{rating.author}} {{rating.credibility}}</li>
+    {{/each}}
+  </ol>
+</div>
+
+
+
 <hr>

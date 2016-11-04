@@ -16,5 +16,9 @@
   }, {
     "author" : "Arthur",
     "content" : "African or European?"
-  } ]
+  } ],
+  "ratings" : [{
+    "author" : "jon",
+    "rating" : 10
+    }]
 }
