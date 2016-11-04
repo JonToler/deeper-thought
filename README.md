@@ -1,4 +1,10 @@
 # Question and Answer Message Board
+Implement at least one computed property.
+Possible Ideas: Allow users to upvote the answer they think is best, then sort answers by number of upvotes. Or display the number of answers each question has with a computed property.
+Add a helper.
+Possible Ideas: Nicely-formatted timestamps on questions and/or answers, a formatting change or special icon for questions with no answers, or questions with large numbers of answers, a formatting change or special icon for the answer with the most upvotes, etc.
+Integrate a service.
+Possible Ideas: Allow users to create lists of favorite questions or answers to reference later.
 
 #Specs:
 Questions should have the content of the question itself, an author and additional notes.
