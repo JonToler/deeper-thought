@@ -35,6 +35,10 @@ Where all questions are eventually answered.
 
 {{new-rating saveRating="saveRating"}}
 
+{{#each model as |comment|}}
+  {{comment-tile comment=comment}}
+{{/each}}
+
 
 
 <hr>

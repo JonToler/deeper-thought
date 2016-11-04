@@ -19,6 +19,6 @@
   } ],
   "ratings" : [{
     "author" : "jon",
-    "rating" : 10
+    "credibility" : 10
     }]
 }
