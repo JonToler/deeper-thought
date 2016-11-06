@@ -12,13 +12,12 @@
   } ],
   "comments" : [ {
     "author" : "Johan",
-    "content" : "Where are the Mice?"
+    "content" : "Where are the Mice?",
+    "rating" : 10
   }, {
     "author" : "Arthur",
-    "content" : "African or European?"
-  } ],
-  "ratings" : [{
-    "author" : "jon",
-    "credibility" : 10
-    }]
+    "content" : "African or European?",
+    "rating" : 6
+  } ]
+
 }

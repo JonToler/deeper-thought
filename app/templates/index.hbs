@@ -24,16 +24,15 @@ Where all questions are eventually answered.
   </ul>
 </div>
 
-<h4> All comment Ratings </h4>
+<h4> Highest Ratings </h4>
 <div class="well">
   <ol>
-    {{#each model.ratings as |rating|}}
-      <li>By:{{rating.author}} {{rating.credibility}}</li>
+    {{#each model.comments as |comment|}}
+      <li>{{comment.rating}} <br> By:{{comment.author}}</li>
     {{/each}}
   </ol>
 </div>
 
-{{new-rating saveRating="saveRating"}}
 
 {{#each model as |comment|}}
   {{comment-tile comment=comment}}
