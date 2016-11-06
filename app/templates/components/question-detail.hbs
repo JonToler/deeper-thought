@@ -1,14 +1,15 @@
 {{question.post}},
 <hr>
-notes:{{question.notes}}
+<h3>notes:{{question.notes}}</h3>
 <br>
 <p><img src={{question.image}} alt="loading...."></p>
-
+<hr>
 <h2> Comments </h2>
+
 <ul>
-  {{#each question.comments as |comment|}}
-    {{comment-tile comment=comment}}
+  {{#each sortedComments as |comment|}}
+    {{comment-tile comment=comment destroyComment="destroyComment"}}
   {{/each}}
 </ul>
 
-<button {{action 'delete' question}}>Delete</button>
+<button {{action 'delete' question}}>Delete QUESTION</button>

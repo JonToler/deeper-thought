@@ -1,6 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  sortBy: ['rating:desc'],
+  sortedComments: Ember.computed.sort('question.comments', 'sortBy'),
+
   addNewQuestion: false,
   actions: {
     questionFormShow() {
@@ -13,7 +16,7 @@ export default Ember.Component.extend({
         notes: this.get('notes'),
         post: this.get('post'),
         image: this.get('image'),
-        
+
 
 
       };
