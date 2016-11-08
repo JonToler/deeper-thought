@@ -4,12 +4,6 @@
 <br>
 <p><img src={{question.image}} alt="loading...."></p>
 <hr>
-<h2> Comments </h2>
 
-<ul>
-  {{#each sortedComments as |comment|}}
-    {{comment-tile comment=comment destroyComment="destroyComment"}}
-  {{/each}}
-</ul>
 
 <button {{action 'delete' question}}>Delete QUESTION</button>

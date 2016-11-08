@@ -9,7 +9,7 @@
 <div class="jumbotron">
   <ul>
     {{#each model.comments as |comment|}}
-      <li>{{comment.content}} - by {{comment.author}}</li>
+      {{comment-tile comment=comment destroyComment="destroyComment"}}
     {{/each}}
   </ul>
 </div>
