@@ -33,10 +33,13 @@ Where all questions are eventually answered.
   </ol>
 </div>
 
+<h1>Favorite answer list</h1>
+<div class="well">
+  {{#each model as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+</div>
 
-{{#each model as |comment|}}
-  {{comment-tile comment=comment}}
-{{/each}}
 
 
 

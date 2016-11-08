@@ -2,6 +2,7 @@
 {{#each favoriteAnswers.items as |item|}}
 <li>
   {{item.author}} -- {{item.content}}
+  <button {{action "remove" item}}>Remove</button>
 </li>
 {{/each}}
 </ul>
