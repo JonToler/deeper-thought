@@ -7,6 +7,10 @@ Integrate a service.
 Possible Ideas: Allow users to create lists of favorite questions or answers to reference later.
 
 #Specs:
+Comments with the highest rating will display on the index page.
+User gives a rating of 100 on a comment.
+The rated comment will display on the index in a list of highest rating.
+
 Questions should have the content of the question itself, an author and additional notes.
 
 Answers should have the content of the answer and the author.
