@@ -6,6 +6,7 @@ export default Ember.Component.extend({
   actions: {
     addToList(item) {
       this.get('favoriteAnswers').add(item);
+      alert('hello');
     },
     delete(comment) {
       if (confirm('Are you sure you want to delete this comment?')) {
