@@ -5,3 +5,11 @@
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 
 {{new-comment saveComment="saveComment" question=model}}
+
+<div class="jumbotron">
+  <ul>
+    {{#each model.comments as |comment|}}
+      <li>{{comment.content}} - by {{comment.author}}</li>
+    {{/each}}
+  </ul>
+</div>
